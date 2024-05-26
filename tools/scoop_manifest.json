@@ -1,0 +1,199 @@
+{
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main.git",
+            "Updated": "2024-05-25T17:34:04-07:00",
+            "Manifests": 1325
+        },
+        {
+            "Name": "extras",
+            "Source": "https://github.com/ScoopInstaller/Extras",
+            "Updated": "2024-05-25T18:52:20-07:00",
+            "Manifests": 2026
+        },
+        {
+            "Name": "CrypticButter",
+            "Source": "https://github.com/CrypticButter/ScoopBucket",
+            "Updated": "2024-05-01T05:51:07-07:00",
+            "Manifests": 1
+        }
+    ],
+    "apps": [
+        {
+            "Name": "7zip",
+            "Info": "",
+            "Version": "24.05",
+            "Source": "main",
+            "Updated": "2024-05-25T16:51:39.9876464-07:00"
+        },
+        {
+            "Name": "archwsl",
+            "Info": "",
+            "Version": "24.4.28.0",
+            "Source": "extras",
+            "Updated": "2024-05-10T22:07:26.0043553-07:00"
+        },
+        {
+            "Name": "buttery-taskbar",
+            "Info": "",
+            "Version": "2.3.1",
+            "Source": "CrypticButter",
+            "Updated": "2024-05-01T11:16:56.8987408-07:00"
+        },
+        {
+            "Name": "cacert",
+            "Info": "",
+            "Version": "2024-03-11",
+            "Source": "main",
+            "Updated": "2024-05-08T21:48:19.9454929-07:00"
+        },
+        {
+            "Name": "curl",
+            "Info": "",
+            "Version": "8.8.0_1",
+            "Source": "main",
+            "Updated": "2024-05-25T16:51:42.241318-07:00"
+        },
+        {
+            "Name": "dark",
+            "Info": "",
+            "Version": "3.14",
+            "Source": "main",
+            "Updated": "2024-05-05T00:52:29.2907782-07:00"
+        },
+        {
+            "Name": "fd",
+            "Info": "",
+            "Version": "10.1.0",
+            "Source": "main",
+            "Updated": "2024-05-25T16:51:42.9189074-07:00"
+        },
+        {
+            "Name": "fzf",
+            "Info": "",
+            "Version": "0.52.1",
+            "Source": "main",
+            "Updated": "2024-05-25T16:51:43.6643272-07:00"
+        },
+        {
+            "Name": "gcc",
+            "Info": "",
+            "Version": "13.2.0",
+            "Source": "main",
+            "Updated": "2024-04-21T21:38:59.7076708-07:00"
+        },
+        {
+            "Name": "go",
+            "Info": "",
+            "Version": "1.22.3",
+            "Source": "main",
+            "Updated": "2024-05-19T21:08:59.9075372-07:00"
+        },
+        {
+            "Name": "gzip",
+            "Info": "",
+            "Version": "1.3.12",
+            "Source": "main",
+            "Updated": "2024-05-08T21:48:16.29754-07:00"
+        },
+        {
+            "Name": "jq",
+            "Info": "",
+            "Version": "1.7.1",
+            "Source": "main",
+            "Updated": "2024-04-21T21:35:24.8601349-07:00"
+        },
+        {
+            "Name": "ln",
+            "Info": "",
+            "Version": "0.2018.07.25",
+            "Source": "main",
+            "Updated": "2024-05-19T20:57:27.23628-07:00"
+        },
+        {
+            "Name": "make",
+            "Info": "",
+            "Version": "4.4.1",
+            "Source": "main",
+            "Updated": "2024-05-08T21:48:17.7952691-07:00"
+        },
+        {
+            "Name": "neovim",
+            "Info": "",
+            "Version": "0.10.0",
+            "Source": "main",
+            "Updated": "2024-05-25T16:52:06.5607457-07:00"
+        },
+        {
+            "Name": "nvm",
+            "Info": "",
+            "Version": "1.1.12",
+            "Source": "main",
+            "Updated": "2024-04-21T22:22:44.0802875-07:00"
+        },
+        {
+            "Name": "python",
+            "Info": "",
+            "Version": "3.12.3",
+            "Source": "main",
+            "Updated": "2024-05-05T00:52:51.2734545-07:00"
+        },
+        {
+            "Name": "ripgrep",
+            "Info": "",
+            "Version": "14.1.0",
+            "Source": "main",
+            "Updated": "2024-04-27T12:37:56.2232419-07:00"
+        },
+        {
+            "Name": "sudo",
+            "Info": "",
+            "Version": "0.2020.01.26",
+            "Source": "main",
+            "Updated": "2024-04-21T21:35:25.1279571-07:00"
+        },
+        {
+            "Name": "tldr",
+            "Info": "",
+            "Version": "0.6.1",
+            "Source": "main",
+            "Updated": "2024-05-05T00:21:43.1668237-07:00"
+        },
+        {
+            "Name": "touch",
+            "Info": "",
+            "Version": "0.2018.07.25",
+            "Source": "main",
+            "Updated": "2024-04-21T21:49:09.5393041-07:00"
+        },
+        {
+            "Name": "tree-sitter",
+            "Info": "",
+            "Version": "0.22.6",
+            "Source": "main",
+            "Updated": "2024-05-08T21:48:19.1940776-07:00"
+        },
+        {
+            "Name": "unzip",
+            "Info": "",
+            "Version": "6.00",
+            "Source": "main",
+            "Updated": "2024-05-08T21:48:19.6236258-07:00"
+        },
+        {
+            "Name": "wget",
+            "Info": "",
+            "Version": "1.21.4",
+            "Source": "main",
+            "Updated": "2024-05-08T21:48:22.033942-07:00"
+        },
+        {
+            "Name": "zoxide",
+            "Info": "",
+            "Version": "0.9.4",
+            "Source": "main",
+            "Updated": "2024-05-11T02:56:16.4819751-07:00"
+        }
+    ]
+}
