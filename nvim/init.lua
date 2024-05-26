@@ -125,7 +125,7 @@ vim.opt.rtp:prepend(lazypath)
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
   require 'plugins/nvim-autopairs',
-  require 'plugins/tokyonight',
+
   require 'plugins/vim-sleuth',
   require 'plugins/comment',
   require 'plugins/git-signs',
@@ -138,6 +138,11 @@ require('lazy').setup({
   require 'plugins/mini',
   require 'plugins/nvim-treesitter',
   require 'plugins/dressing',
+
+  -- Color schemes below
+  -- require 'plugins/tokyonight', --Leaving this commented out while I try out other color schemes
+  --  require 'plugins/neofusion'
+  require 'plugins/gruvbox',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

@@ -5,7 +5,7 @@ config.default_prog = { "C:\\Program Files\\WindowsApps\\Microsoft.PowerShell_7.
 
 -- Color schemes I like :
 -- arcoiris
-config.color_scheme = "Atelierseaside (dark) (terminal.sexy)"
+config.color_scheme = "rose-pine-moon"
 -- Horizon Dark (Gogh)
 -- rose-pine-moon
 config.enable_tab_bar = false
@@ -22,9 +22,10 @@ config.font = wezterm.font_with_fallback({
 	"Hack Nerd Font Mono",
 })
 
-config.window_background_image = "C:\\Users\\kefah\\.config\\wezterm\\backgrounds\\monsterav2.jpg"
+config.window_background_image = "C:\\Users\\kefah\\.config\\wezterm\\backgrounds\\mountains.jpg"
+
 config.window_background_image_hsb = {
-	brightness = 0.1,
+	brightness = 0.05,
 }
 
 return config

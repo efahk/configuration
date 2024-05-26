@@ -1,6 +1,5 @@
 # Load prompt config 
-
-oh-my-posh --init --shell pwsh --config "$env:POSH_THEMES_PATH\catppuccin_mocha.omp.json" | Invoke-Expression
+oh-my-posh --init --shell pwsh --config "$env:POSH_THEMES_PATH\negligible.omp.json" | Invoke-Expression
 
 # Icons 
 Import-Module -Name Terminal-Icons
