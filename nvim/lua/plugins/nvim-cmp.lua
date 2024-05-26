@@ -61,7 +61,7 @@ return {
           ['<C-Space>'] = cmp.mapping.complete(), -- show completion suggestions. Generally, wont need because it should auto-show
 
           ['<C-e>'] = cmp.mapping.abort(), -- close the completion window.
-          ['<Tab>'] = cmp.mapping.confirm { select = false },
+          ['<CR>'] = cmp.mapping.confirm { select = false },
 
           ['<C-y>'] = cmp.mapping.confirm { select = true },
 
