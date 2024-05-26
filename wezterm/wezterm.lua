@@ -21,12 +21,14 @@ config.font = wezterm.font_with_fallback({
 	"Hack Nerd Font Mono",
 })
 
--- [TODO]: Use a cross-platform .config prefix
 config.window_background_image = "C:\\Users\\kefah\\.config\\wezterm\\backgrounds\\mountains.jpg"
-
+-- NOTE: Background
 config.window_background_image_hsb = {
-	brightness = 0.05,
+	brightness = 0.03,
 }
+
+-- config.window_background_opacity = 0
+-- config.win32_system_backdrop = "Tabbed" -- Tabbed is cool - I should use this on windows if I"m not vibing with a background"
 
 -- NOTE: TAB BAR
 config.enable_tab_bar = true
@@ -88,7 +90,7 @@ end)
 config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
 
 config.keys = {
-	-- Split panes horizontally / vertically
+	-- Pane Management
 	{
 		key = "|",
 		mods = "LEADER|SHIFT",
@@ -99,7 +101,36 @@ config.keys = {
 		mods = "LEADER|SHIFT",
 		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
 	},
-	-- Create/Close new tabs and new windows
+	{
+		key = "y",
+		mods = "LEADER",
+		action = wezterm.action.ActivatePaneDirection("Next"),
+	},
+	{
+		key = "o",
+		mods = "LEADER",
+		action = wezterm.action.ActivatePaneDirection("Prev"),
+	},
+
+	-- Tab Management
+	{
+		key = "t",
+		mods = "LEADER",
+		action = wezterm.action.PromptInputLine({
+			description = wezterm.format({
+				{ Attribute = { Intensity = "Bold" } },
+				{ Foreground = { AnsiColor = "Fuchsia" } },
+				{ Text = "Enter name for new workspace" },
+			}),
+			action = wezterm.action_callback(function(window, pane, line)
+				if line then
+					window:perform_action(wezterm.action.SwitchToWorkspace({
+						name = line,
+					}))
+				end
+			end),
+		}),
+	},
 	{
 		key = "t",
 		mods = "LEADER",
@@ -110,6 +141,17 @@ config.keys = {
 		mods = "LEADER",
 		action = wezterm.action.CloseCurrentTab({ confirm = true }), -- Confirm renders an overlay to ask if I really want to close the tab
 	},
+	{
+		key = "h",
+		mods = "LEADER",
+		action = wezterm.action.ActivateTabRelative(-1),
+	},
+
+	{
+		key = "l",
+		mods = "LEADER",
+		action = wezterm.action.ActivateTabRelative(1),
+	},
 
 	-- Workspace Management
 	{
@@ -118,6 +160,16 @@ config.keys = {
 		action = wezterm.action.SwitchToWorkspace({
 			name = "interpeter-work",
 		}),
+	},
+	{
+		key = "h",
+		mods = "LEADER|CTRL",
+		action = wezterm.action.SwitchWorkspaceRelative(-1),
+	},
+	{
+		key = "l",
+		mods = "LEADER|CTRL",
+		action = wezterm.action.SwitchWorkspaceRelative(1),
 	},
 	{
 		key = "w",
