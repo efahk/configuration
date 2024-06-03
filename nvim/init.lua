@@ -138,6 +138,7 @@ require('lazy').setup({
   require 'plugins/mini',
   require 'plugins/nvim-treesitter',
   require 'plugins/dressing',
+  require 'plugins/obsidian',
 
   -- Color schemes below
   -- require 'plugins/tokyonight', --Leaving this commented out while I try out other color schemes
