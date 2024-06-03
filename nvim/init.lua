@@ -142,7 +142,8 @@ require('lazy').setup({
   -- Color schemes below
   -- require 'plugins/tokyonight', --Leaving this commented out while I try out other color schemes
   --  require 'plugins/neofusion'
-  require 'plugins/gruvbox',
+  --  require 'plugins/gruvbox',
+  require 'plugins/catpuccin',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
