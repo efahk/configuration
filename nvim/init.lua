@@ -61,6 +61,8 @@ vim.opt.scrolloff = 10
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 
+vim.opt.fixendofline = false
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
