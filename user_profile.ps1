@@ -4,7 +4,7 @@ oh-my-posh --init --shell pwsh --config "$env:POSH_THEMES_PATH\negligible.omp.js
 # Icons 
 Import-Module -Name Terminal-Icons
 
-# PSReadLine
+# PSReadLinejk
 Set-PSReadLineOption -EditMode Vi
 Set-PSReadLineOption -BellStyle None
 Set-PSReadLineKeyHandler -Chord 'Ctrl+d' -Function DeleteChar
@@ -26,9 +26,12 @@ Set-Alias vim nvim
 #Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 
 # Utilities
-function which ($command) {
+function which ($command)
+{
 	Get-Command -Name $command -ErrorAction SilentlyContinue | 
-	Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
+		Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
+.  C:\Users\kwefah\Documents\PowerShell\Aliases.ps1
